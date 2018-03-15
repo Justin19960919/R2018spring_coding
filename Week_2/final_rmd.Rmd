@@ -1,0 +1,71 @@
+---
+title: "Crawling PTT's NBA news"
+author: "Justin Lee"
+date: "2018/3/14"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Crawling with R
+
+Crawling is essential in extracting data from the internet. I used the r package 'rvest' in attempt to crawl PTT's NBA posts from 2/27 to 3/1, which included 10 pages. Using Search Gadget tool from Chrome we can easily find the tags in the html code.
+
+> First we install the required packages.
+
+```{r}  
+knitr::opts_chunk$set(echo = TRUE)
+library(rvest)
+library(xml2)
+library(XML)
+library(magrittr)
+```
+
+Then we use the url of the ptt post and use 'rvest' to read the information. In this exercise, I imported the date, author name, title, and likes of every post from 2/27-3/1, which is from index 5701 to 5709, a total of 10 pages.
+
+> Practice pipe flow using 'magrittr' to write more staight forward code.
+
+```{r url, echo=TRUE}
+all_url<-c()
+for(i in 0:9){
+  url_all_1<-paste0('https://www.ptt.cc/bbs/NBA/index570',i,'.html')
+  all_url<-c(all_url,url_all_1)
+}
+
+
+title.1.10<-c()
+evaluation.1.10<-c()
+name.1.10<-c()
+date.1.10<-c()
+for(i in 1:length(all_url)){
+  title<-read_html(all_url[i])%>%html_nodes('.title a')%>%html_text()
+  title.1.10<-c(title.1.10,title)
+  evaluation<-read_html(all_url[i])%>%html_nodes('.nrec')%>%html_text()
+  evaluation.1.10<-c(evaluation.1.10,evaluation)
+  name<-read_html(all_url[i])%>%html_nodes('.author')%>%html_text()
+  name.1.10<-c(name.1.10,name)
+  date<-read_html(all_url[i])%>%html_nodes('.date')%>%html_text()
+  date.1.10<-c(date.1.10,date)
+  Sys.sleep(sample(3:5,1))
+}
+
+```
+
+
+```{r read num 9, echo=TRUE}
+crawl_0_9<-data.frame(title=title.1.10,date=date.1.10,name=name.1.10,comment=evaluation.1.10)
+```
+
+> Present data
+
+```{r table, echo=FALSE}
+library(knitr)
+kable(crawl_0_9,caption='First crawler')
+```
+
+
+
+
