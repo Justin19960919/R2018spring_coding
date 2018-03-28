@@ -1,0 +1,62 @@
+---
+title: "Data Visualization"
+author: "Justin Lee"
+date: "2018/3/29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+chooseCRANmirror(graphics=FALSE, ind=1)
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Who is the BEST PG of all the teams in  the NBA?
+
+I was interested in NBA stats, so I downloaded NBA data from season 15-16, using the R package 'Sports Analytics'.
+```{r install, echo=TRUE}
+install.packages('SportsAnalytics')
+library('SportsAnalytics')
+nba_1516<-fetch_NBAPlayerStatistics(season='15-16')
+attach(nba_1516)
+install.packages('dplyr')
+library('dplyr')
+```
+> Using DPLYR, I added new variables to the characteristics I think are important to a PG.
+
+```{r echo=TRUE}
+nba_1516<-mutate(nba_1516,
+                 A_T_ratio=Assists/Turnovers,
+                 Off_Rebound_Ratio=OffensiveRebounds/TotalRebounds,
+                 FieldGoalPercent=FieldGoalsMade/FieldGoalsAttempted,
+                 Three_point_percentage=ThreesMade/ThreesAttempted,
+                 FreeThrowPercentage=FreeThrowsMade/FreeThrowsAttempted)
+pg<-nba_1516[which(nba_1516$Position=='PG'),]  ## 共30名控衛
+pg_ana<-pg%>%select('Name','Team','TotalMinutesPlayed','TotalPoints','FieldGoalPercent','ThreesMade','Three_point_percentage','FreeThrowPercentage','Assists','A_T_ratio','Steals','Blocks','TotalRebounds','GamesPlayed')
+
+```
+* In modern basketball, three point shooting is essential in point guard abilities.
++ Three point percentage needs to be above mean to be in the discussion of a good pg
+```{r echo=TRUE}
+pg_three<-pg_ana%>%filter(Three_point_percentage>mean(Three_point_percentage))%>%arrange(desc(ThreesMade))
+```
+
+```{r qplot, echo=TRUE}
+library(ggplot2)
+qplot(x=ThreesMade,y=Three_point_percentage,data=pg_three,geom='point',main='Nice point guard',xlab ='ThreesMade',ylab='Percentage',size=TotalPoints)
+```
+* I wanted to see who were great three point shooters among all point guards.
+```{r elite shooter, echo=TRUE}
+elite_threeshooter<-pg_three%>%filter(Three_point_percentage>=0.3647444,TotalPoints>=1500)%>%group_by(Team)%>%arrange(desc(Three_point_percentage),desc(TotalPoints))%>%mutate(ThreePoints=ThreesMade*3)
+```
+> stephen curry ;Kyle Lowry; Damian Lillard; Kemba Walker
+
+* Draw a 3D plot of point guards that have a 3-point percentage over mean, and considering their overall abilities.
+```{r 3Dplot, echo=TRUE}
+
+library('lattice')
+attach(pg_three)
+pg_three$AT<-ifelse(A_T_ratio<=1.873,0,ifelse(A_T_ratio<=2.227,1,ifelse(A_T_ratio<=2.547,2,3)))
+pg_three$defense<-pg_three$Steals+pg_three$Blocks
+cloud(TotalPoints~Assists+defense|AT,data = pg_three,shade=T,main='Who is the best pg')
+```
+
+
