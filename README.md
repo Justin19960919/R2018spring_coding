@@ -17,7 +17,10 @@ by 李杰臨  JUSTIN LEE
 - read about R package 'httr' (2/10)
 - Produce a R markdown document
 
-> Third Week (2018/3/15-3/26)
+> Third Week (2018/3/15-3/29)
 - Decided to start making my own R notes on "APPLY FAMILY" / "DPLYR" / "LATTICE" / "GGPLOT"
 - Finish small project using R data "Sport Analysis"
 - Will start soon on week 4 open project API in spring break
+
+> Start learning text mining and FB API (2018/3/29)
+
