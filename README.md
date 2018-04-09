@@ -22,5 +22,11 @@ by 李杰臨  JUSTIN LEE
 - Finish small project using R data "Sport Analysis"
 - Will start soon on week 4 open project API in spring break
 
-> Start learning text mining and FB API (2018/3/29)
+> ~2018/4/9
+- In constant worry of my project progress
+- Finsih week 4 hw about Wordcloud about "壹週刊"
+- R markdown of"壹週刊" occured some problems (couldn't run)
+- Finished reading about EDA
+- Need to learn crawling further (I don't know how to get inside information from url)
+- 4/10 biochem midterm ; will start project 5 after
 
