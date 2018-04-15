@@ -1,0 +1,80 @@
+---
+title: "Text mining 1"
+author: "Justin Lee"
+date: "2018/4/9"
+output: html_document
+---
+> My first Word Cloud
+
+## 初訪文字探勘 
+>這是我做text mining word cloud的第一個嘗試。我選定的對象是壹週刊的FBpage，想看壹週刊的臉書貼文是不是符合大家「腥羶色」的印象。於是我利用FB API 爬了300則貼文，並做文字雲。
+
+```{r install, include=FALSE}
+
+library("tm") 
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+library('tmcn')
+library('jiebaR')
+library('jiebaRD')
+```
+
+## 安裝完相關套件後，開始清資料，把對分析不相干的字料清除。例如：stopwords，跟無意義的字串，例如：「嗯」
+
+```{r eval=FALSE, include=FALSE}
+page<-read.csv('~/Desktop/tm.csv')
+```
+
+
+```{r run, echo=TRUE}
+
+docs<-Corpus(VectorSource(page$message))
+inspect(docs)
+tospace<-content_transformer(function(x,pattern)gsub(pattern,'',x))
+docs<-tm_map(docs,removePunctuation)
+docs<-tm_map(docs,removeNumbers)
+docs<-tm_map(docs,function(word){gsub('[A-Za-z0-9]','',word)})
+docs<-tm_map(docs,tospace,'/')
+docs<-tm_map(docs,tospace,'@')
+docs<-tm_map(docs,tospace,'\\|')
+docs<-tm_map(docs,stripWhitespace)
+docs<-tm_map(docs,tospace,'我')
+docs<-tm_map(docs,tospace,'的')
+docs<-tm_map(docs,tospace,'了')
+docs<-tm_map(docs,tospace,'呵')
+docs<-tm_map(docs,tospace,'呢')
+docs<-tm_map(docs,tospace,'嘛')
+docs<-tm_map(docs,tospace,'是')
+docs<-tm_map(docs,tospace,'啊')
+docs<-tm_map(docs,tospace,'就')
+docs<-tm_map(docs,removeWords,stopwordsCN())
+
+```
+
+> 用jeiba package進行斷詞
+
+```{r jeiba, echo=TRUE}
+mixseg = worker()
+jieba_tokenizer=function(d){
+  unlist(segment(d[[1]],mixseg))
+}
+
+seg = lapply(docs, jieba_tokenizer)
+freqFrame = as.data.frame(table(unlist(seg)))
+freqFrame<-freqFrame[1:3116,]
+
+
+View(freqFrame)
+
+pal <- brewer.pal(8, 'Dark2')
+
+wordcloud(freqFrame$Var1,freqFrame$Freq,min.freq = 9,
+          random.order=F,random.color=T, 
+          rot.per=0.3,colors=pal,
+          use.r.layout = F,fixed.asp=T,family='Heiti TC Light')
+
+```
+
+
+
