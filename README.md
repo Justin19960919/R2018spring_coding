@@ -17,7 +17,16 @@ by 李杰臨  JUSTIN LEE
 - read about R package 'httr' (2/10)
 - Produce a R markdown document
 
-> Third Week (2018/3/15-3/26)
+> Third Week (2018/3/15-3/29)
 - Decided to start making my own R notes on "APPLY FAMILY" / "DPLYR" / "LATTICE" / "GGPLOT"
 - Finish small project using R data "Sport Analysis"
 - Will start soon on week 4 open project API in spring break
+
+> ~2018/4/9
+- In constant worry of my project progress
+- Finsih week 4 hw about Wordcloud about "壹週刊"
+- R markdown of"壹週刊" occured some problems (couldn't run)
+- Finished reading about EDA
+- Need to learn crawling further (I don't know how to get inside information from url)
+- 4/10 biochem midterm ; will start project 5 after
+
