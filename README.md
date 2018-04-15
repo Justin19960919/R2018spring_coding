@@ -34,9 +34,9 @@ by 李杰臨  JUSTIN LEE
 - Share self-made R notes on github
 - Couldn't run rmd file of week 4; used Word to turn in hw4 
 - Watch links including:
-http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
-https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
-http://www.hmwu.idv.tw/web/teaching/105-2/bigdata/Kyper/lecture03/demo.html
-https://ntu-csx-datascience.github.io/106-2RSampleCode/week_6/course_6/PTTBoyGirl.html
+*http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
+*https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
+*http://www.hmwu.idv.tw/web/teaching/105-2/bigdata/Kyper/lecture03/demo.html
+*https://ntu-csx-datascience.github.io/106-2RSampleCode/week_6/course_6/PTTBoyGirl.html
 
 
