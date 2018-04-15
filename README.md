@@ -30,3 +30,13 @@ by 李杰臨  JUSTIN LEE
 - Need to learn crawling further (I don't know how to get inside information from url)
 - 4/10 biochem midterm ; will start project 5 after
 
+~2018/4/15
+- Share self-made R notes on github
+- Couldn't run rmd file of week 4; used Word to turn in hw4 
+- Watch links including:
+http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
+https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
+http://www.hmwu.idv.tw/web/teaching/105-2/bigdata/Kyper/lecture03/demo.html
+https://ntu-csx-datascience.github.io/106-2RSampleCode/week_6/course_6/PTTBoyGirl.html
+
+
