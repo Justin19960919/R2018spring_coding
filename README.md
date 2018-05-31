@@ -1,9 +1,11 @@
 # My R Coding Journey.
+
+#### Introduction
 - Justin Lee
-> > Current School & Major: National Taiwan University Public Health
- > Minor: Life Sciences
- > Goal: Use R fluently
- > 
+- Current School & Major: National Taiwan University Public Health
+- Minor: Life Sciences
+- Goal: Use R fluently
+ 
 
 
 
