@@ -1,5 +1,5 @@
 # R My Coding Journey.
-### by 李杰臨 JUSTIN LEE  
+### by JUSTIN LEE  
 
 > First Week (2018/3/1-3/7)
 - finish hw1
@@ -19,19 +19,21 @@
 > Third Week (2018/3/15-3/29)
 - Decided to start making my own R notes on "APPLY FAMILY" / "DPLYR" / "LATTICE" / "GGPLOT"
 - Finish small project using R data "Sport Analysis"
-- Will start soon on week 4 open project API in spring break
 
-> ~2018/4/9
-- In constant worry of my project progress
+> Forging my R crawler using the "Rvest" package
+- Continue self made R-notes
 - Finsih week 4 hw about Wordcloud about "壹週刊"
 - R markdown of"壹週刊" occured some problems (couldn't run)
-- Finished reading about EDA
-- Need to learn crawling further (I don't know how to get inside information from url)
-- 4/10 biochem midterm ; will start project 5 after
+- Finished reading about Exploratory data analysis (EDA)
+- NEED TO LEARN ABT httr crawler in R
+>>
+
+
+
+
 
 ~2018/4/15
 - Share self-made R notes on github
-- 
 - Watch links including:
 * http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
 * https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
