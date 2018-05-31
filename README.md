@@ -26,9 +26,7 @@
 - R markdown of"壹週刊" occured some problems (couldn't run)
 - Finished reading about Exploratory data analysis (EDA)
 - NEED TO LEARN ABT httr crawler in R
->>
-
-
+* Blue
 
 
 
