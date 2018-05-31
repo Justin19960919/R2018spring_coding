@@ -7,7 +7,7 @@
 - Previous R experience : Biostatistics, Epidemiology analysis, Survival Analysis, Regression...etc
 - Goal: Become a data analyst
 
-### _*Learning Resources*_### _*MY CODING PROGRESS*_
+### _*Learning Resources*_
 
 #### Books 
 > * [Machine Learning with R](https://the-eye.eu/public/Books/Programming/Machine%20Learning%20with%20R%20-%20Second%20Edition%20%5BeBook%5D.pdf)
