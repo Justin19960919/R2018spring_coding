@@ -1,5 +1,5 @@
 # R My Coding Journey.
-### by JUSTIN LEE  
+#### by JUSTIN LEE  
 
 > First Week (2018/3/1-3/7)
 - finish hw1
@@ -27,17 +27,11 @@
 - Finished reading about Exploratory data analysis (EDA)
 - NEED TO LEARN ABT httr crawler in R
 
-> > 爬蟲文章
+### Learning Resources
+>
+### 爬蟲 Web Scraping
 * [xml2爬美國中情局(CIA)的解密文件資料庫](https://rpubs.com/skydome20/R-Note13-Web-Crawler-on-CIA-CREST-by-xml2)
-*** hi
 
 
-~2018/4/15
-- Share self-made R notes on github
-- Watch links including:
-* http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
-* https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
-* http://www.hmwu.idv.tw/web/teaching/105-2/bigdata/Kyper/lecture03/demo.html
-* https://ntu-csx-datascience.github.io/106-2RSampleCode/week_6/course_6/PTTBoyGirl.html
 
 
