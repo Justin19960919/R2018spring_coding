@@ -1,18 +1,17 @@
-# My R Coding Journey.
+# My R Coding Journey
 
 #### Introduction
-- Justin Lee
-- Current School & Major: National Taiwan University Public Health
-- Minor: Life Sciences
-- Goal: Use R fluently
- 
-
+- Name: Justin Lee
+- Current School: National Taiwan University
+- Major / Minor:  Public Health / Life Sciences
+- Previous R experience : Biostatistics, Epidemiology analysis, Survival Analysis, Regression...etc
+- Goal: Use R fluently to solve problems
 
 
 #### 2018/3/1-3/7
-> * Review DataCamp R basics
-> * Practice Using R Markdown
-> * Learn about the pipe operator "%>%"
+- * Review DataCamp R basics
+- * Practice Using R Markdown
+- * Learn about the pipe operator "%>%"
 
 
 #### 2018/3/8-3/14
