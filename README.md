@@ -26,6 +26,8 @@
 - R markdown of"壹週刊" occured some problems (couldn't run)
 - Finished reading about Exploratory data analysis (EDA)
 - NEED TO LEARN ABT httr crawler in R
+<推薦閱讀爬蟲文章>
+- NEED TO LEARN ABT httr crawler in R
 [xml2爬美國中情局(CIA)的解密文件資料庫](https://rpubs.com/skydome20/R-Note13-Web-Crawler-on-CIA-CREST-by-xml2)
 
 
