@@ -43,6 +43,7 @@
 > * [**instaR**](https://www.rdocumentation.org/packages/instaR/versions/0.2.4
 > * [**stringr**](https://www.rdocumentation.org/packages/stringr/versions/1.1.0) 
 > * [**Quick Guide to Data Journalism**](https://www.datacamp.com/community/blog/data-journalism-guide-tools)**
+> * [**kable**](https://www.rdocumentation.org/packages/kableExtra/versions/0.7.0)
 
 
 #### Web Scraping / Crawling
@@ -55,9 +56,10 @@
 
 #### Text mining and Sentimental Analysis
 > * [Text mining with R _WHOLE TUTORIAL_](https://www.tidytextmining.com)
-> * [Sentimental Analysis](https://uc-r.github.io/sentiment_analysis)
+> * [Text mining with tidytext (with Sentimental Analysis)](https://uc-r.github.io/sentiment_analysis)
 > * [Natural Language Processing : NLP](http://web.stanford.edu/class/cs224n/syllabus.html)
 > * [DataCamp: Sentimental Analysis](https://www.datacamp.com/community/tutorials/sentiment-analysis-R)
+> * [Sentimental Analysis using tidytext](http://jacobsimmering.com/2016/11/15/tidytext/)
 > * http://rstudio-pubs-static.s3.amazonaws.com/12422_b2b48bb2da7942acaca5ace45bd8c60c.html
 > * https://cran.r-project.org/web/packages/text2vec/vignettes/text-vectorization.html
 
@@ -90,6 +92,17 @@
 > * https://r-brain.io/en/blog/natural-language-processing-a-simple-chat-bot/
 
 
+#### Learning SQL
+> * [DataCamp : SQL](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
+> * [SQL brief](https://www.1keydata.com/tw/sql/sqlbetween.html)
+
+
+#### Machine Learning Resources
+> * [Practical machine learning](https://www.coursera.org/learn/practical-machine-learning/lecture/EALzX/predicting-with-trees)
+> * [Random Forests - Leo Breiman and Adele Cutler](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#intro)
+
+>>
+>>
 ### _*MY R CODING PROGRESS*_
 
 #### 2018/3/1-3/7
@@ -111,6 +124,7 @@
 > * Practice Data Visualization using Lattice / Qplot /GGPLOT
 > * started making my own R notes to record learning curve 
 > * Finish small project using R for NBA "Sport Analysis" of 2017 season
+
 
 #### Forging my R crawler using the "Rvest" package
 > * Continue self made R-notes
