@@ -40,9 +40,9 @@
 
 
 #### Documentations
-> * [**instaR**](https://www.rdocumentation.org/packages/instaR/versions/0.2.4
+> * [**instaR**](https://www.rdocumentation.org/packages/instaR/versions/0.2.4)
 > * [**stringr**](https://www.rdocumentation.org/packages/stringr/versions/1.1.0) 
-> * [**Quick Guide to Data Journalism](https://www.datacamp.com/community/blog/data-journalism-guide-tools)**
+> * [**Quick Guide to Data Journalism**](https://www.datacamp.com/community/blog/data-journalism-guide-tools)**
 > * [**kable**](https://www.rdocumentation.org/packages/kableExtra/versions/0.7.0)
 
 
