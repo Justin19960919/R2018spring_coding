@@ -1,6 +1,5 @@
-# R2018spring_coding
-# First R project 
-by 李杰臨  JUSTIN LEE  
+## R My Coding Journey.
+# by 李杰臨 JUSTIN LEE  
 
 > First Week (2018/3/1-3/7)
 - finish hw1
@@ -32,7 +31,7 @@ by 李杰臨  JUSTIN LEE
 
 ~2018/4/15
 - Share self-made R notes on github
-- Couldn't run rmd file of week 4; used Word to turn in hw4 
+- 
 - Watch links including:
 * http://mropengate.blogspot.tw/2016/04/tf-idf-in-r-language.html
 * https://rstudio-pubs-static.s3.amazonaws.com/118341_dacd8e7a963745eeacf25f96da52770e.html
